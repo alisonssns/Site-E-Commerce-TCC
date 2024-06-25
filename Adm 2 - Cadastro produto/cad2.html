@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cad produto</title>
+    <link rel="stylesheet" href="cad.css">
+</head>
+<body>
+    <label for="abre" class="Abre-painel">Painel de controle</label>
+    <input type="checkbox" name="" id="abre">
+    <div class="painel">
+        <div class="links-1">
+        <a href="">Login Administrador</a>
+        <a href="">Atualizar produtos</a>
+        <a href="">Adicionar produtos</a>
+        </div>
+        <div class="links-2">
+        <a href="">Visualizar Compras</a>
+        <a href="">Gerenciar usuários</a>
+        <a href="">FAQ de perguntas</a>
+        </div>
+    </div>
+<div class="container">
+    <section class="esquerda">
+    <div class="titulo">INSERIR NOVO PRODUTO</div>
+    <form action="cad3.php" method="post">
+
+<div class="botoes">
+
+    <div class="set">
+        <input      class="nome"    type="text"         name="nome_prod_sp"     placeholder="Nome"              oninput="atualizarTexto()"     id="text">
+        <input      class="preco"   type="number"       name="valor_prod_sp"    placeholder="Valor"             oninput="atualizarValor()"     id="val"  step="any">
+    </div>  
+    
+    <div class="set">
+        <input      class="categ"   type="text"         name="cat_prod_sp"      placeholder="Categoia">
+        <input      class="quant"   type="number"       name="quant_prod_sp"    placeholder="Quantidade"> 
+    </div>
+        <input      class="desc"    type="text"         name="tdesc_prod_sp"    placeholder="Descrição Home"    oninput="atualizarDesc()"      id="descri">
+    <div class="set">
+        <textarea                                       name="espec_prod_sp"    placeholder="Especificações"    ></textarea>
+        <textarea                                       name="desc_prod_sp"     placeholder="Descrição"         ></textarea>
+    </div>
+
+    <div class="set">
+    <label      class="escolhe"     for="imagem-cria">Escolher Imagem</label>
+    <input                          type="file"         name="img_prod_sp"                                      onchange="trocarSrcImagem()"   id="imagem-cria" >
+    <input      class="codigo"      type="number"       name="cod_prod_sp"         placeholder="Código">
+    </div>
+
+</div>
+
+    <input type="submit" value="CADASTRAR" id="cad">
+
+    </form>
+    </section>
+
+    <section class="direita">
+        <div class="box">
+            <div class="img"><imgs id="Imagem-refletida"></div>
+    <div class="cont">
+            <div class="text">
+            <div class="nome_prod" id="texto-refletido">Nome do produto</div>
+            <div class="value">R$<pp id="valor-refletido">00.00</pp></div></div>
+            <div class="esp" id="descricao-refletida">Descrição do produto na Home</div>
+            <div class="cat"><p1>★ ★ ★ ★ ★</p1>(121)</div>
+    </div>
+            <div class="btn"><p1 id="p1">Adicionar ao Carrinho</p1></div>
+        </div>
+    </section>
+</div>
+</body>
+<script src="cad.js"></script>
+</html>

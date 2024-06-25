@@ -1,0 +1,362 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    background-color: #313533;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 100%;
+    }
+    
+    ::-webkit-scrollbar-track {
+    border: transparent;
+    border-radius: 4px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    background:#646564;  
+    }
+
+.Abre-painel{
+    display: flex;
+    color: white;
+    border: 1px solid white;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    width: 97%;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+
+.Abre-painel:hover{
+    background-color: rgba(255, 255, 255, 0.788);
+    color: #101111;
+    border: none;
+}
+
+a{
+    opacity: 0.8;
+    background-color: rgba(255, 255, 255, 0.897);
+    border-radius: 5px;
+    height: 60px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #101111;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+a:hover{
+    opacity: 1;
+    width: 92%;
+}
+
+#abre:checked ~ .painel{
+    max-height: 300px;
+}
+
+.painel{
+    margin-top: 5px;
+    transition: 0.5s ease;
+    background-color: rgb(45, 49, 48);
+    width: 97%;
+    height: 300px;
+    border-radius: 3px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    max-height: 0px;
+    overflow: hidden;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+.links-1, .links-2{
+    width: 50%;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.corpo{
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.direita{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #313533;
+    width: 50%;
+    height: 100%;
+}
+
+.box imgs{
+    width: 150px;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.box .img{
+    opacity: 0.7;
+    background-color: rgba(255, 255, 255, 0.048);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.box .img:hover{
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+.box{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    height: 300px;
+    width: 280px;
+    margin-top: 50px;
+}
+
+pp{
+    margin-left: 2px;
+}
+
+.box .cont{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 70px;
+    margin-top: 10px;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.box .text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 13px;
+    height: 20px;
+}
+
+.value{
+    width: 75px;
+}
+
+.nome_prod{
+    width: 180px;
+}
+
+.box .esp{
+    margin-top: 10px;
+    position: relative;
+    right: 0px;
+    display: flex;
+    width: 100%;
+    font-size: 11px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.627);
+}
+
+.cat{
+    width: 100%;
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    color: rgba(255, 255, 255, 0.557);
+}
+
+.cat p1{
+    color: rgba(255, 255, 0, 0.553);
+    margin-right: 10px;
+}
+
+.box .btn{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+}
+
+.box .btn #p1{
+    border: 1px solid rgba(255, 255, 255, 0.409);
+    border-radius: 5px;
+    width: 150px;
+    font-size: 12px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.box .btn #p1:hover{
+    background-color: white;
+    color: #1F2120;
+    transition: 0.5s ease;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img{
+    width: 70px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.titulo{
+    color: rgba(255, 255, 255, 0.842);
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 300px;
+    width: 600px;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=text], input[type=number]{
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.567);
+    color: white;
+    height: 30px;
+    text-indent: 5px;
+    border-radius: 2px;
+    outline: none;
+}
+
+input[type=number]{
+    text-align: center;
+}
+
+.set{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.nome, .categ{
+    width: 60%;
+}
+
+.preco, .codigo, .quant{
+    width: 30%;
+}
+
+.desc{
+    width: 69%;
+}
+
+.escolhe{
+    height: 35px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    border: 1px solid rgba(255, 255, 255, 0.055);
+    background-color: rgba(255, 255, 255, 0.678);
+    color: #313533;
+}
+
+textarea{
+    text-indent: 5px;
+    color: white;
+    width: 46%;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+    resize: none;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.567);
+}
+
+input[type=file]{
+    display: none;
+}
+
+#cad{
+    letter-spacing: 2px;
+    opacity: 0.8;
+    margin-top: 20px;
+    background-color: transparent;
+    border-radius: 5px;
+    width: 70%;
+    height: 30px;
+    border: 1px solid white;
+    color: #1F2120;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+
+#cad:hover{
+    opacity: 1;
+}

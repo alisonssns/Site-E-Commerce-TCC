@@ -1,0 +1,103 @@
+body{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo{
+    width: 100%;
+}
+
+.logo img{
+    width: 80px;
+}
+
+.vindo{
+    color: #F95F62;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+p2{
+    color: #F95F62;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.info{
+    background-color: #313533;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 380px;
+    border-top-left-radius: 40px ;
+    border-top-right-radius: 40px ;
+    margin-top: 40px;
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    width: 250px;
+}
+
+hr{
+    width: 400px;
+    margin-top: 40px;
+}
+
+#text{
+    height: 25px;
+    border: 0px solid;
+    outline: none;
+    text-transform: capitalize;
+    background-color: #313533;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+#pass{
+    height: 25px;
+    border: 0px solid;
+    outline: none;
+    background-color: #313533;
+    border-bottom: 1px solid white;
+    margin-top: 50px;
+    color: white;
+}
+
+#text::placeholder{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 'fontawesome';
+    color: #ffffff;
+}
+
+#pass::placeholder{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 'fontawesome';
+    color: #ffffff;
+}
+
+#login{
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100px;
+    margin-top: 60px;
+    transition: 0.5s ease;
+}
+
+#login:hover{
+    background-color: white;
+    color: #313533;
+    transition: 0.5s ease ;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="produto.css">
+</head>
+<body>
+    <section class="box">
+        <div class="esq">
+            <div class="img"></div>
+            <label><input type="file" id="file"><div class="file_btn">Escolha uma imagem</div></label>
+        </div>
+        <div class="dir">
+            <div class="cont">
+                <div class="n_c">
+            <div class="nome"><p1>Nome</p1><input type="text" name="" value="Microfone Games TECH" id="nome"></div>
+            <div class="nome"><p1>Categoria</p1><input type="text" name="" value="Acessórios" id="cat"></div>
+                </div>
+            <div class="val">
+        <div class="nome"><p1>Valor inicial</p1><input type="number" name="" value="220.88" id="val_in"></div>
+        <div class="nome"><p1>Valor</p1><input type="number" name="" value="180.29" id="val"></div>
+        <div class="nome"><p1>Codigo</p1><input type="number" name="" value="33023" id="val"></div>
+        <div class="nome"><p1>Quantidade</p1><input type="number" name="" value="64" id="val"></div>
+            </div> 
+            <div class="baixos">
+                <textarea cols="30" rows="10" id="desc">O mouse gamer é um acessório indispensável para jogadores sérios que buscam precisão e desempenho máximo durante suas sessões de jogo. Com design ergonômico e recursos avançados, ele oferece uma experiência de jogo imersiva e responsiva.</textarea>
+                <textarea cols="30" rows="10" class="especifica" id="esp">DPI ajustável, Iluminação RGB, Sensor óptico, Botões programáveis, Taxa de atualização, Design ambidestro, Cabo trançado, Peso ajustável, Conector USB, Software de personalização.</textarea>
+
+            </div>
+            <input type="submit" value="Updatar o produto" id="sub">
+            </div>
+            <div class="btns">
+                <div class="desc" id="btnD" onclick="mostradesc()">Descrição</div>
+                <div class="esp" id="btnE" onclick="mostraesp()">Especificações</div>
+            </div>
+        </div>
+    </section>  
+</body>
+<script src="produto.js"></script>
+</html>

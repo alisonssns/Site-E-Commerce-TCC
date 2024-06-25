@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="end.css">
+    <title>Endereço</title>
+    <link rel="icon"href="/imagens_prod/logo.png">
+    </head>
+<body>
+    <div class="header">
+        <div class="infos">
+            <a href="/3 - Home/home.php" class="logo">TechEase</a> 
+            
+    <form action="/3 - Home/home.php">
+        <input name="pesq" type="search" id="src" placeholder="Pesquisar..." required>
+        <label><input type="submit" value="" style="display:none;"><img src="/Imagens_visual/search.png"></label>
+    </form>
+            <div class="icons">
+                <div class="icon">
+                    <a href="/3 - Home/home.php" class="home"><img src="/imagens_visual/home.png"></a>
+                    <a href="/8 - carrinho de compras/cart.php" class="cart"> <!-- Botão que leva ao carrinho de compras -->
+                        <img src="/Imagens_visual/cart.png" alt=""><div class="sup">+3</div>
+                    </a>
+                    <label class="menu-btn" for="abre"><img src="/Imagens_visual/menu.png"></label> <!-- Botão ativa o input para abrir o menu -->
+                </div>
+                <input type="checkbox" id="abre">
+                 <div class="content">
+                    <div class="rows">
+                        <a href="/5 - Pagina Usuario/user.html" class="row" id="p"><div class="img"><img src="/imagens_prod/user.png" alt=""></div>      Editar Perfil</a>
+                        <a href="/10 - Sobre nós/sobre.html" class="row" id="p"><div class="img"><img src="/imagens_prod/info.png" alt=""></div>         Sobre nós</a>
+                        <a href="/6 - FAQ/faq.html" class="row" id="p"><div class="img"><img src="/imagens_prod/help.png" alt=""></div>                  Ajuda e suporte</a>
+                        <div href="" class="row">       <div class="img"><img src="/imagens_prod/power.png" alt=""></div>  Sair</div>
+                    </div>
+                 </div>
+        </div>
+    </div>
+        </div>
+
+    <form action="" method="post" class="end">
+        <section class="dados">
+            <div class="container">
+            <t1>Adicione um endereço</t1>
+            <div class="inputs">
+
+<op1>
+            <input type="text" id="nomeCompleto" placeholder="Nome completo">
+            <input type="text" id="cpf"  placeholder="CPF" maxlength="14" oninput="formatarCPF(this)">
+
+</op1>
+<op1>
+            <input type="text" id="cep" placeholder="CEP" maxlength="9" onkeyup="formatarCEP(this)" oninput="consultarCEP(this)">
+            <input type="text" id="localidade" placeholder="Cidade" disabled>
+</op1>
+<op1>
+        <input type="text" id="uf" placeholder="Estado" disabled>
+</op1>
+            <input type="text" id="bairro" placeholder="Bairro" disabled>
+<op1>
+            <input type="text" id="logradouro" placeholder="Rua/Avenida" disabled>
+            <input type="number" id="num" placeholder="Número">
+</op1>
+<op1>            
+            <input type="text" id="comp" placeholder="Complemento (Opcional)">
+            <input type="text" id="tel" placeholder="Número de telefone" maxlength="15" oninput="formatarTelefone(this)">
+</op1>
+            </div>
+            <div class="sobre-end">
+            <div class="radios">
+                <input type="radio" name="tipo" id="casa" value="casa">
+                <input type="radio" name="tipo" id="trab" value="trabalho">
+                <label class="casa" for="casa">Casa</label><hr>
+                <label class="trab" for="trab">Trabalho</label>
+            </div>
+                
+            </div>
+        </div>
+        </section>
+        <section class="confirma">
+            <div class="box">
+                <div class="t">Termos e condições   </div>
+                <div class="termo">
+                    <div class="tit">
+                    Antes de prosseguir com o cadastro de seu endereço, pedimos que leia atentamente os seguintes termos e condições. Ao prosseguir com o cadastro, você estará concordando em cumprir e estar vinculado(a) a estes termos. Caso não concorde com alguma parte destes termos, por favor, não continue com o processo de cadastro.
+                    </div>
+
+                    <p1>Privacidade e Segurança dos Dados:</p1>         1.1. Todas as informações pessoais fornecidas no cadastro, incluindo o endereço, serão tratadas de acordo com nossa Política de Privacidade. Comprometemo-nos a proteger a confidencialidade de seus dados e utilizá-los somente conforme previsto em nossa política.
+                    <p1>Veracidade das Informações:</p1>                2.1. O usuário declara que todas as informações fornecidas no cadastro, incluindo o endereço, são verdadeiras, precisas e atualizadas.
+                    <br>2.2. O usuário é o único responsável por quaisquer informações incorretas ou desatualizadas fornecidas, isentando-nos de quaisquer responsabilidades decorrentes dessas informações.
+                    <p1>Uso do Endereço:</p1>                           3.1. O endereço fornecido será utilizado exclusivamente para os fins específicos relacionados aos serviços oferecidos em nosso site, tais como entrega de produtos ou prestação de serviços contratados.
+                    <br>3.2. O usuário reconhece que é responsável por informar mudanças em seu endereço e concorda em atualizar suas informações no site, caso necessário.
+                    <p1>Cookies e Tecnologias de Rastreamento:</p1>     4.1. Ao utilizar nosso site, cookies e outras tecnologias de rastreamento poderão ser utilizados para melhorar sua experiência de navegação e fornecer conteúdo personalizado. Para mais informações, consulte nossa Política de Cookies.
+                    <p1>Responsabilidades do Usuário:</p1>              5.1. O usuário concorda em utilizar o site de forma adequada e em conformidade com as leis e regulamentações aplicáveis.
+                    <br>5.2. O usuário é responsável por manter a confidencialidade de suas informações de login e não compartilhá-las com terceiros. Quaisquer atividades realizadas em sua conta são de sua inteira responsabilidade.
+                    <p1>Alterações nos Termos e Condições:</p1>         6.1. Reservamo-nos o direito de modificar estes termos e condições a qualquer momento, sem aviso prévio. As alterações entrarão em vigor imediatamente após serem publicadas no site.
+                    <br>6.2. O usuário concorda em revisar periodicamente os termos e condições para estar ciente de quaisquer atualizações ou mudanças.
+                    <p1>Contato:</p1>                                   7.1. Caso tenha dúvidas ou precise de assistência em relação aos termos e condições ou ao cadastro de endereço, entre em contato conosco através dos canais disponíveis no site.
+                
+                </div>
+                <Label class="conf-termo"><input type="checkbox" id="" required>Aceito os termos e condições</Label>
+                <div class="btn"><input type="submit" value="CADASTRAR" onclick="salvarEndereco()"></div>
+            </div>
+        </section>
+    </form>
+    
+    <div class="footer">
+        <div class="cima">
+        <div class="loja_desc">
+            <div class="Dname">TechEase<p1>.</p1></div> 
+         <div class="sets">
+            <div class="Ddesc"><i>Conectando você ao futuro tecnológico!</i></div>
+         </div>
+        </div>
+        <div class="shop">
+            <div class="Sname">Compras</div>
+         <div class="sets">
+            <div class="acessorios">Acessorios</div>
+            <div class="cadeiras">Cadeiras</div>
+            <div class="computadores">Computadores</div>
+            <div class="telas">Telas</div>
+         </div>
+        </div>
+        <div class="link">
+            <div class="Lname">Links</div>
+         <div class="sets">
+            <div class="contato">Contate-nos</div>
+            <div class="videos">Nossos videos</div>
+            <div class="designs">Designs</div>
+            <div class="sobre">Sobre nós</div>
+         </div>
+        </div>
+        <div class="notificacoes">
+            <div class="Nname">Notificações</div>
+         <div class="sets">
+            <div class="Ndesc">Insira seu Email para receber notificações sobre nossos produtos e possiveis promoções.</div>
+                <div class="email">
+                 <input type="email" placeholder="EMAIL" class="btnE">
+                 <input type="submit" id="subm" value=">">
+                </div>
+         </div>
+        </div>
+        </div><hr>
+        <div class="baixo"> Copyright @ 2023 Direitos de imagem reservados pelos diretores<b>TechEase</b> </div>
+    </div>
+</body>
+<script src="end.js"></script>
+</html>

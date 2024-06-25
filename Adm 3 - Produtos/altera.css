@@ -1,0 +1,252 @@
+body{
+    background-color:#1F2120;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family:Arial,sans-serif,sans-serif;
+}
+
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+.header form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+form label img{
+    width: 15px;
+    filter: invert(100%);
+    position: absolute;
+    margin-left: -24px;
+    margin-top: -7px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+a{
+    color: unset;
+    text-decoration: unset;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 12px;
+    }
+    
+    ::-webkit-scrollbar-track {
+    border: transparent;
+    border-radius: 4px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    background:#646564;  
+    }
+
+.header{
+    transition: 0.5s ease;
+    width: 100%;
+    background-color:#1F2120;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#src{
+    color: white;
+    text-indent: 10px;
+    margin-top: 5px;
+    width: 1281px;
+    border-radius: 4px;
+    height: 30px;
+    background-color: transparent;
+    outline: navajowhite;
+    border: 1px solid rgba(255, 255, 255, 0.498);
+    transition: 0.5s ease;
+}
+
+#src::placeholder{
+    font-weight: bold;
+}
+
+.Abre-painel{
+    display: flex;
+    color: white;
+    border: 1px solid white;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    width: 97%;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+
+.Abre-painel:hover{
+    background-color: rgba(255, 255, 255, 0.788);
+    color: #101111;
+    border: none;
+}
+
+a{
+    opacity: 0.8;
+    background-color: rgba(255, 255, 255, 0.897);
+    border-radius: 5px;
+    height: 60px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #101111;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+a:hover{
+    opacity: 1;
+    width: 92%;
+}
+
+#abre:checked ~ .painel{
+    max-height: 300px;
+}
+
+.painel{
+    margin-top: 5px;
+    transition: 0.5s ease;
+    background-color: rgb(51, 50, 50);
+    width: 97%;
+    height: 300px;
+    border-radius: 3px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    max-height: 0px;
+    overflow: hidden;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+.links-1, .links-2{
+    width: 50%;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.produtos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 97%;
+}
+
+.set{
+    display: flex;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: white;
+    flex-direction: row;
+    font-weight: bold;
+    height: 60px;
+    width: 100%;
+    background-color: rgba(240, 248, 255, 0.123);
+}
+
+.id{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5%;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.356);
+}
+
+.infos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.set hr{
+    height: 80%;
+    border: 1px solid rgba(255, 255, 255, 0.055);
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+
+.foto{
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.nome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+
+.valor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+}
+
+.btns hr{
+    height: 95%;
+    border: 1px solid rgba(255, 255, 255, 0.274);
+}
+
+.excluir, .atual{
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color: #101111;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.excluir:hover, .atual:hover{
+    opacity: 1;
+    width: 65%;
+}
+
+.atual{
+    border-radius: 0px 5px 5px 0px;
+}

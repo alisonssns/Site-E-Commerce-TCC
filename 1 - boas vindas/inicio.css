@@ -1,0 +1,108 @@
+body{
+    background-image: url(/Imagens_visual/print2.png);
+    background-size: cover;
+    backdrop-filter: blur(5px) brightness(70%);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    inset: 0;
+    color: white;
+    font-family:Arial,sans-serif,sans-serif;
+    margin: 0;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title, .nome, .desc{
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    font-size: 25px;
+}
+
+.nome{
+    font-size: 70px;
+    font-weight: bold;
+    letter-spacing: 6px;
+}
+
+.desc{
+    font-style: italic;
+}
+
+.btn{
+    margin-top: 85px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 120px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+
+.btn:hover{
+    background-color: aliceblue;
+    color: #313533;
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+
+.footer{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.local{
+    width: 210px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.insta{
+    width: 110px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.footer img{
+    width: 20px;
+    position: relative;
+    right: 5px;
+}
+
+.corpo{
+    display: flex;
+    flex-direction: column;
+}
+
+.meio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
